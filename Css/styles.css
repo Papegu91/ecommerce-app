@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Product List */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(25% - 40px); /* Responsive design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product a {
+    background-color: #007BFF; /* Button color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Makes the link look like a button */
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Product Details */
+#product-details {
+    padding: 20px;
+}
+
+#product-details img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+}
